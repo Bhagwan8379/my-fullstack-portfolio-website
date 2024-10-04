@@ -10,8 +10,8 @@ const app = express()
 // Middleware
 app.use(cors({
     origin: process.env.NODE_ENV === "development"
-        ? (process.env.LOCAL_SERVER)
-        : (process.env.LIVE_SERVER),
+        ? (process.env.LIVE_SERVER)
+        : (process.env.LOCAL_SERVER),
     credentials: true
 }))
 
